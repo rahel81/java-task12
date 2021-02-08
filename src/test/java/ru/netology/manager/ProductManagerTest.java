@@ -13,12 +13,12 @@ class ProductManagerTest {
     private ProductRepository repository = new ProductRepository();
     private ProductManager manager = new ProductManager(repository);
 
-    private Product book1 = new Book(1, "Прованс", 100, "Мейл", 150, 2015);
-    private Product book2 = new Book(2, "Прислуга", 150, "Стокетт", 200, 2010);
-    private Product book3 = new Book(3, "Алхимик", 350, "Коэльо", 300, 1990);
-    private Product smartphone1 = new Smartphone(11, "Galaxy S", 15000, "Samsung", 7, 2015);
-    private Product smartphone2 = new Smartphone(12, "Redmi A", 10000, "Xiaomi", 9, 2017);
-    private Product smartphone3 = new Smartphone(13, "iPhone", 50000, "Apple", 11, 2019);
+    private Product book1 = new Book(1, "Прованс", 100, "Мейл");
+    private Product book2 = new Book(2, "Прислуга", 150, "Стокетт");
+    private Product book3 = new Book(3, "Алхимик", 350, "Коэльо");
+    private Product smartphone1 = new Smartphone(11, "Galaxy S", 15000, "Samsung");
+    private Product smartphone2 = new Smartphone(12, "Redmi A", 10000, "Xiaomi");
+    private Product smartphone3 = new Smartphone(13, "iPhone", 50000, "Apple");
     private Product product1 = new Product(7, "X", 500);
     private Product product2 = new Product(8, "A", 50);
     private Product product3 = new Product(9, "B", 5000);

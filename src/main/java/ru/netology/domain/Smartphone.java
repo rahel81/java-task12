@@ -4,17 +4,17 @@ import java.util.Objects;
 
 public class Smartphone extends Product{
     private String maker;
-    private int version;
-    private int manufactureYear;
+    /*private int version;
+    private int manufactureYear;*/
 
     public Smartphone() {
         super();
     }
-    public Smartphone(int id, String name, int price, String maker, int version, int manufactureYear) {
+    public Smartphone(int id, String name, int price, String maker) {
         super(id, name, price);
         this.maker = maker;
-        this.version = version;
-        this.manufactureYear = manufactureYear;
+       /* this.version = version;
+        this.manufactureYear = manufactureYear;*/
     }
 
     public String getMaker() {
@@ -25,7 +25,7 @@ public class Smartphone extends Product{
         this.maker = maker;
     }
 
-    public int getVersion() {
+    /*public int getVersion() {
         return version;
     }
 
@@ -39,9 +39,9 @@ public class Smartphone extends Product{
 
     public void setManufactureYear(int manufactureYear) {
         this.manufactureYear = manufactureYear;
-    }
+    }*/
 
-    @Override
+    /*@Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -64,5 +64,10 @@ public class Smartphone extends Product{
                 ", version=" + version +
                 ", manufacture=" +  +
                 '}';
+    }*/
+    @Override
+
+    public boolean matches(String search) {
+        return super.matches(search) || maker.equalsIgnoreCase(search);
     }
 }
