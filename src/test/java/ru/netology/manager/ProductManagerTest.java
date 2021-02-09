@@ -75,4 +75,15 @@ class ProductManagerTest {
 
         assertArrayEquals(expected, actual);
     }
+    @Test
+    public void searchByNameBookAndMakerSmartphone() {
+        Product[] actual1 = manager.searchBy("Алхимик");
+        Product[] actual2 = manager.searchBy("Xiaomi");
+        Product[] actual = new Product[2];
+        actual[0] = actual1[0];
+        actual[1] = actual2[0];
+        Product[] expected = new Product[]{book3, smartphone2};
+        assertArrayEquals(expected, actual);
+    }
+
 }
